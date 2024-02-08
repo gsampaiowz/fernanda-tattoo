@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,14 +36,14 @@ export default function Home() {
             </p>
           </span>
 
-          <img
+          <Image
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000"
             alt="Fotografia fernanda"
           />
         </section>
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
-          <img
+          <Image
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1EDlo_UzIZiUuyAGBhUPvh8Qf84NoYn7A&sz=w10000"
             alt="Tattoo"
@@ -52,9 +53,9 @@ export default function Home() {
             relação entre o Ser, o corpo e a tatuagem. Buscando exaltar a
             personalidade de seus clientes através do seu{" "}
             <b>traçado característico</b> e <b>tatuagens atemporais</b>.
-            "Observo a personalidade de cada pessoa que vem até mim. Parto para
+            “Observo a personalidade de cada pessoa que vem até mim. Parto para
             a criação intuindo as formas. Deixo elas virem. Uso o movimento e a
-            anatomia do corpo a meu favor. O corpo fala.” Diz ela sobre como ela
+            anatomia do corpo a meu favor. O corpo fala.“ Diz ela sobre como ela
             cria seus projetos únicos de tatuagens.
           </p>
         </section>
@@ -73,7 +74,7 @@ export default function Home() {
             “Eu quero mostrar ao mundo aquilo que vejo, e que as pessoas sintam
             esse amor!”
           </p>
-          <img
+          <Image
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1A3qxKB-wYOINEz6RtWyppsCDNTUnZtT7&sz=w10000"
             alt="Pintura"
@@ -117,7 +118,7 @@ export default function Home() {
           </p>
         </section>
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
-          <img
+          <Image
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1hjLaSJDvJR9geUpc8ZdMXqwMuN-y1jSI&sz=w10000"
             alt="Magic Box"
@@ -136,7 +137,7 @@ export default function Home() {
             cerâmico. Em seguida é esmaltada e queimada novamente em alta
             temperatura.
           </p>
-          <img
+          <Image
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=13cF25byJYODW1VfyEApXP-Zus_Fixlyq&sz=w10000"
             alt="Cerâmica"
