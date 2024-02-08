@@ -1,5 +1,4 @@
 import Header from "@/components/Header/Header";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,14 +34,14 @@ export default function Home() {
             </p>
           </span>
 
-          <Image
+          <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000"
             alt="Fotografia fernanda"
           />
         </section>
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
-          <Image
+          <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1EDlo_UzIZiUuyAGBhUPvh8Qf84NoYn7A&sz=w10000"
             alt="Tattoo"
@@ -73,7 +72,7 @@ export default function Home() {
             “Eu quero mostrar ao mundo aquilo que vejo, e que as pessoas sintam
             esse amor!”
           </p>
-          <Image
+          <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1A3qxKB-wYOINEz6RtWyppsCDNTUnZtT7&sz=w10000"
             alt="Pintura"
@@ -117,7 +116,7 @@ export default function Home() {
           </p>
         </section>
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
-          <Image
+          <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1hjLaSJDvJR9geUpc8ZdMXqwMuN-y1jSI&sz=w10000"
             alt="Magic Box"
@@ -136,7 +135,7 @@ export default function Home() {
             cerâmico. Em seguida é esmaltada e queimada novamente em alta
             temperatura.
           </p>
-          <Image
+          <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=13cF25byJYODW1VfyEApXP-Zus_Fixlyq&sz=w10000"
             alt="Cerâmica"
