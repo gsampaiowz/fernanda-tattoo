@@ -1,9 +1,18 @@
+import Carousel from "@/components/carousel";
 import Header from "@/components/header";
 
 export default function Home() {
+  const slides = [
+    "https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000",
+    "https://drive.google.com/thumbnail?id=1EDlo_UzIZiUuyAGBhUPvh8Qf84NoYn7A&sz=w10000",
+    "https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000",
+    "https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000",
+  ];
+
   return (
+    //  HOME
     <>
-      {/* HOME */}
+      {/* CABECALHO */}
       <Header />
 
       <main className="flex min-h-screen flex-col items-center">
@@ -34,12 +43,17 @@ export default function Home() {
             </p>
           </span>
 
-          <img
+          {/* <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1F4y3hZD0GCj3gpR1acZMtzoLi4r2PHDR&sz=w10000"
             alt="Fotografia fernanda"
-          />
+          /> */}
+          <Carousel slides={slides} map={slides.map((s) => (
+              <img src={s} />
+            ))}/>
+            
         </section>
+        {/* TATUAGENS */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
           <img
             className="w-96 rounded-lg"
@@ -57,6 +71,7 @@ export default function Home() {
             cria seus projetos únicos de tatuagens.
           </p>
         </section>
+        {/* PINTURA */}
         <section className="max-w-[1440px] w-full items-center flex flex-col-reverse cssBreak:flex-row justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
           <p className="indent-8 cssBreak:w-3/6">
             Recentemente, a artista começou a desenvolver seu trabalho com a
@@ -78,6 +93,7 @@ export default function Home() {
             alt="Pintura"
           />
         </section>
+        {/* MARCA DE ROUPAS E ACESSORIOS */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
           <h1 className="font-extrabold text-xl">
             Marca de roupas e acessórios
@@ -88,12 +104,13 @@ export default function Home() {
             customização para o nascimento da sua própria marca CosmicArt. A
             ideologia da Cosmic é levar a mensagem do Amor através da Arte,
             criar conexão entre pessoas e semear a linguagem do Amor Divino para
-            nosso planeta. Para isso, as artes da Fernanda Moraes viram
+            nosso planeta. Para isso, as artes da Fernanda Moraes viram{" "}
             <b>estampas</b>. Elas são trazidas tanto de suas obras pintadas à
             mão, quanto criadas digitalmente. As roupas e acessórios ganham vida
             em suas coleções vibrantes!
           </p>
         </section>
+        {/* PRINTS */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
           <h1 className="font-extrabold text-xl">Prints</h1>
           <p className="indent-8">
@@ -107,6 +124,7 @@ export default function Home() {
             numerados.
           </p>
         </section>
+        {/* STICKERS */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
           <h1 className="font-extrabold text-xl">Stickers</h1>
           <p className="indent-8">
@@ -115,19 +133,21 @@ export default function Home() {
             mão e outros criados exclusivamente para os colecionadores!
           </p>
         </section>
+        {/* MAGIC BOX */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
           <img
             className="w-96 rounded-lg"
             src="https://drive.google.com/thumbnail?id=1hjLaSJDvJR9geUpc8ZdMXqwMuN-y1jSI&sz=w10000"
             alt="Magic Box"
           />
-          <p className="indent-8">
+          <p className="indent-8 cssBreak:w-3/6">
             As Magic box são caixas de madeira pintadas à mão. Que servem tanto
             como uma peça de arte decorativa quanto para guardar objetos.
           </p>
         </section>
+        {/* CERAMICA */}
         <section className="max-w-[1440px] w-full items-center flex justify-center bg-white gap-8 py-8 px-8 flex-wrap">
-          <p className="indent-8">
+          <p className="indent-8 cssBreak:w-3/6">
             De forma criativa, Fernanda produz peças de cerâmica feitas à mão
             através do processo de modelagem (pinch pot). Para isso ela utiliza
             a argila, que após ser modelada e esculpida, será queimada em forno
@@ -141,6 +161,7 @@ export default function Home() {
             alt="Cerâmica"
           />
         </section>
+        {/* CONTATO */}
         <section className="max-w-[1440px] w-full items-center flex flex-col justify-center bg-primary gap-8 py-8 px-8 flex-wrap">
           <h1 className="font-extrabold text-xl">Contato</h1>
           <div className="flex flex-col gap-4">
@@ -171,6 +192,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        {/* RODAPE */}
         <footer className="h-12 w-full justify-center flex items-center">
           <small>&copy; 2024 Fernanda Tattoo</small>
         </footer>
