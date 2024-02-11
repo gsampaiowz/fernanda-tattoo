@@ -49,7 +49,7 @@ export default function Home() {
             alt="Fotografia fernanda"
           /> */}
           <Carousel slides={slides} map={slides.map((s) => (
-              <img src={s} />
+              <img key={s} src={s} />
             ))}/>
             
         </section>
