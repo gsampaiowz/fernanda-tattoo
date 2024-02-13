@@ -49,6 +49,7 @@ const Section: React.FC<SectionProps> = ({
           slides={images}
           map={images.map((image) => (
             <a
+              key={image}
               target="_blank"
               href="https://www.instagram.com/fernandamoraesn/"
               className={`min-w-96 h-full before:flex before:items-center before:self-center before:justify-center before:h-full before:w-full before:absolute before:z-10 before:text-white hover:before:content-['Ir_para_o_Instagram'] bg-center bg-[length:100%] before:font-bold cursor-pointer hover:bg-[length:110%]  before:hover:backdrop-brightness-[60%] transition-all`}
