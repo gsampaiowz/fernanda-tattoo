@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 type CarouselProps = {
-  map: React.ReactNode,
-  slides: string[],
+  map: React.ReactNode;
+  slides: string[];
 };
 
 const Carousel: React.FC<CarouselProps> = ({ map, slides }) => {
@@ -16,25 +17,25 @@ const Carousel: React.FC<CarouselProps> = ({ map, slides }) => {
     setCurrentSlide((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="rounded-lg overflow-hidden relative border-primary border-2">
       <div
-        className="flex transition-transform ease-out duration-500"
+        className="w-96 aspect-[16/20] flex transition-transform ease-out duration-500 relative"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {map}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      <div className="absolute inset-0 flex items-center justify-between p-2 transition-transform pointer-events-none">
         <button
           onClick={prev}
-          className="p-1 rounded-xl shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-2 rounded-full shadow bg-primary/40 hover:bg-primary pointer-events-auto"
         >
-          left
+          <FaArrowLeft size={20} color="white"/>
         </button>
         <button
           onClick={next}
-          className="p-1 rounded-xl shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-2 rounded-full shadow bg-primary/40 hover:bg-primary pointer-events-auto"
         >
-          right
+          <FaArrowRight size={20} color="white"/>
         </button>
       </div>
     </div>

@@ -16,6 +16,12 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {
+      scale: ['hover'],
+      // ... other variants if needed
+    },
+  },
   plugins: [],
 };
 export default config;
