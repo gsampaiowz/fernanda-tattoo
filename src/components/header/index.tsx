@@ -98,6 +98,17 @@ const Header = () => {
           >
             cerâmica
           </a>
+          <a
+            onClick={() => {
+              setTimeout(() => {
+                window.scrollBy(0, -60);
+              }, 700);
+            }}
+            className="capitalize font-semibold text-black [text-shadow:_0_0_4px_rgb(255_255_255_/_100%)]"
+            href="#contato"
+          >
+            contato
+          </a>
         </nav>
       </div>
     </header>
