@@ -19,7 +19,7 @@ const Carousel: React.FC<CarouselProps> = ({ map, slides }) => {
   return (
     <div className="rounded-lg overflow-hidden relative border-primary border-2">
       <div
-        className="w-96 aspect-[16/20] flex transition-transform ease-out duration-500 relative"
+        className="max-w-64 cssBreak:max-w-96 aspect-[16/20] flex transition-transform ease-out duration-500 relative"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {map}

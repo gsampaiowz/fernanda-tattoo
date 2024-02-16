@@ -18,10 +18,10 @@ export default function Home() {
       <Header />
 
       {/* WHATSAPP FIXO */}
-      <div className="fixed top-16 right-0 py-2 px-4 cursor-pointer flex justify-center z-10 bg-white rounded-l-lg border-4 border-r-0 border-primary">
+
+      <div className="fixed top-16 right-0 py-2 px-4 cursor-pointer flex justify-center z-[5] bg-white rounded-l-lg border-4 border-r-0 border-primary">
         <FaWhatsappSquare color="var(--primary)" size={32} />
       </div>
-
       <main className="mt-16 flex min-h-screen flex-col items-center">
         {/* SOBRE */}
         <Section

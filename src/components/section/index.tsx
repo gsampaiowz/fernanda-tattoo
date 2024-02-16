@@ -32,9 +32,9 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={title.toLowerCase()}
-      className={`max-w-[1440px] w-full items-center flex flex-col-reverse cssBreak:flex-row${
+      className={`max-w-[1440px] sm:px-12 w-full items-center flex flex-col-reverse cssBreak:flex-row${
         isReverse ? " bg-white cssBreak:flex-row-reverse" : " bg-primary"
-      } justify-between gap-8 py-8 px-24 flex-wrap`}
+      } justify-between gap-8 py-8 px-6 cssBreak:px-24 flex-wrap`}
     >
       <div
         className={`flex flex-col gap-8 items-center ${
@@ -52,7 +52,7 @@ const Section: React.FC<SectionProps> = ({
               key={image}
               target="_blank"
               href="https://www.instagram.com/fernandamoraesn/"
-              className={`min-w-96 h-full before:flex before:items-center before:self-center before:justify-center before:h-full before:w-full before:absolute before:z-10 before:text-white hover:before:content-['Ir_para_o_Instagram'] bg-center bg-[length:100%] before:font-bold cursor-pointer hover:bg-[length:110%]  before:hover:backdrop-brightness-[60%] transition-all`}
+              className={`min-w-64 cssBreak:min-w-96 h-full before:flex before:items-center before:self-center before:justify-center before:h-full before:w-full before:absolute before:z-10 before:text-white hover:before:content-['Ir_para_o_Instagram'] bg-center bg-[length:100%] before:font-bold cursor-pointer hover:bg-[length:110%]  before:hover:backdrop-brightness-[60%] transition-all`}
               style={{ backgroundImage: `url(${image})` }}
             ></a>
           ))}

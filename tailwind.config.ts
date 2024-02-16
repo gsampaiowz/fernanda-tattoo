@@ -8,17 +8,17 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'cssBreak': '900px',
+      cssBreak: "1050px",
     },
     extend: {
       colors: {
-        'primary': '#d7a87d',
+        primary: "#d7a87d",
       },
     },
   },
   variants: {
     extend: {
-      scale: ['hover'],
+      scale: ["hover"],
       // ... other variants if needed
     },
   },
