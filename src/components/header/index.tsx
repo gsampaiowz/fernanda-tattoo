@@ -16,7 +16,7 @@ const Header = () => {
           alt="Logo"
         />
         <BiMenu className="block cssBreak:hidden cursor-pointer z-30" onClick={() => setMenuOpen(!menuOpen)} size={30} color="black"/>
-        <nav className={`fixed ${menuOpen ? "right-0" : "-right-64"} transition-all top-0 h-screen bg-white p-12 z-20 gap-8 flex flex-col w-64 cssBreak:h-auto cssBreak:p-0 cssBreak:flex-row cssBreak:w-auto cssBreak:static`}>
+        <nav className={`fixed ${menuOpen ? "right-0" : "-right-64"} cssBreak:bg-transparent transition-all top-0 h-screen bg-white p-12 z-20 gap-8 flex flex-col w-64 cssBreak:h-auto cssBreak:p-0 cssBreak:flex-row cssBreak:w-auto cssBreak:static`}>
           <a
             onClick={() => {
               setTimeout(() => {
