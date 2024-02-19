@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import { FaInstagram, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Section from "./../components/section/index";
 import {
@@ -18,13 +18,16 @@ export default function Home() {
       <Header />
 
       {/* WHATSAPP FIXO */}
-
-      <div className="fixed top-16 right-0 py-2 px-4 cursor-pointer flex justify-center z-[5] bg-white rounded-l-lg border-4 border-r-0 border-primary">
-        <FaWhatsappSquare color="var(--primary)" size={32} />
-      </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=5527998755278"
+        className="fixed bottom-8 right-4 cursor-pointer rounded-full z-10 bg-[#23b33a] p-2"
+      >
+        <FaWhatsapp className="text-white" color="white" size={50} />
+      </a>
       <main className="mt-16 flex min-h-screen flex-col items-center">
         {/* SOBRE */}
         <Section
+          contatoText="Entrar em contato"
           images={sobreImages as string[]}
           title="Sobre"
           text={`
@@ -55,6 +58,8 @@ export default function Home() {
         />
         {/* TATUAGENS */}
         <Section
+          isBgWhite
+          contatoText="Consultar trabalho"
           isReverse
           images={tattooImages as string[]}
           title="Tatuagens"
@@ -71,6 +76,7 @@ export default function Home() {
         />
         {/* PINTURA */}
         <Section
+          contatoText="Consultar Pinturas"
           images={pinturasImages as string[]}
           title="Pintura"
           text="<p>
@@ -88,6 +94,8 @@ export default function Home() {
         />
         {/* MARCA DE ROUPAS E ACESSORIOS */}
         <Section
+          isBgWhite
+          contatoText="Consultar Marca"
           isReverse
           title="Marca"
           text="
@@ -105,6 +113,7 @@ export default function Home() {
         />
         {/* PRINTS */}
         <Section
+          contatoText="Consultar Prints"
           title="Prints"
           text="<p>
           Os prints são impressões em alta qualidade, das obras originais. Eles são produzidos com o método de impressão Fine-art, que trata-se da melhor qualidade e tecnologia de impressão atualmente. Os prints também são uma forma de comercializar as obras para mais pessoas com valores mais acessíveis em relação aos originais. Além disso, eles são produzidos em <b>séries limitadas</b>, ou seja, são feitos em número exato(pré definido) e limitado. São um à um assinados a mão e numerados.
@@ -112,6 +121,8 @@ export default function Home() {
         />
         {/* STICKERS */}
         <Section
+          isBgWhite
+          contatoText="Consultar Stickers"
           isReverse
           title="Stickers"
           text="<p>
@@ -120,6 +131,7 @@ export default function Home() {
         />
         {/* MAGIC BOX */}
         <Section
+          contatoText="Consultar Magic Box"
           images={magicboxImages as string[]}
           title="Magic Box"
           text="<p>
@@ -128,6 +140,8 @@ export default function Home() {
         />
         {/* CERAMICA */}
         <Section
+          isBgWhite
+          contatoText="Consultar Cerâmica"
           images={ceramicaImages as string[]}
           isReverse
           title="Cerâmica"
