@@ -8,6 +8,7 @@ type EntrarContatoProps = {
 const EntrarContato = ({ text, isBgWhite = false }: EntrarContatoProps) => {
   return (
     <a
+      target="_blank"
     href="https://api.whatsapp.com/send?phone=5527998755278"
       className={`border-2 cursor-pointer max-w-72 px-8 py-2 w-full items-center self-center flex gap-4 ${
         isBgWhite
