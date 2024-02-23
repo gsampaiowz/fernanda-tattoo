@@ -19,6 +19,7 @@ export default function Home() {
 
       {/* WHATSAPP FIXO */}
       <a
+        target="_blank"
         href="https://api.whatsapp.com/send?phone=5527998755278"
         className="fixed bottom-8 right-4 cursor-pointer rounded-full z-10 bg-[#23b33a] p-2"
       >
